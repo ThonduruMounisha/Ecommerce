@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://img.freepik.com/free-photo/top-view-desk-concept-with-laptop_23-2148236857.jpg?t=st=1714541618~exp=1714545218~hmac=cb65cd187b8145b9f987f63b856e1192b9e4f7350174b72e3bd84b9be13e3098&w=826');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            font-family:italic;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align items to the top */
+            min-height: 100vh;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            font-family:italic;
+            border-radius: 8px;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+            width: 300px; /* Adjust width */
+            margin-top: 20px; /* Reduce margin-top */
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 10px; /* Reduce margin-bottom */
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4caf50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        p {
+
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        a {
+            color: violet; /* Change color to violet */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Style login icon */
+        .login-icon {
+            color: violet;
+            font-size: 24px;
+            margin-right: 5px; /* Add space between icon and text */
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h2>User Registration</h2>
+    <form action="register" method="post">
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName" required><br>
+
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+    <p>Already have an account? <a href="login"><i class="login-icon fas fa-sign-in-alt"></i>Login</a></p>
+</div>
+</body>
+</html>
